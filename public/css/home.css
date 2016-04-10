@@ -4,7 +4,7 @@ body {
 
 .ann-sep {
     font-size: 2.5em;
-    color: #f2c63d;
+    color: #A85968;
 }
 
 .timeline {
@@ -23,11 +23,11 @@ body {
     top: 0;
     left: 50%;
     margin-left: -0.25em;
-    background: #f2c63d;
+    background: #A85968;
 }
 .timeline:after {
-    content: 'h';
-    font-family: 'Pictos Custom';
+    content: 'a';
+    font-family: 'gettingmarried';
     font-size: 3em;
     -webkit-font-smoothing: antialiased;
     position: absolute;
@@ -36,7 +36,7 @@ body {
     left: -0.0417em;
     width: 100%;
     text-align: center;
-    color: #f2c63d;
+    color: #A85968;
 }
 .timeline-events {
     margin-top: -2em;
@@ -85,7 +85,7 @@ body {
     width: 100%;
 }
 .event-person {
-    font-family: "futura-pt", sans-serif;
+    font-family: "fira-sans-2", sans-serif;
     font-weight: 300;
     color: #b0afa6;
     text-align: right;
@@ -93,7 +93,7 @@ body {
     margin-right: -2.5em;
 }
 .event-person-sep {
-    font-family: "jubilat", serif;
+    font-family: "lobster", serif;
     font-weight: 400;
     margin: 0 0.15em;
 }
