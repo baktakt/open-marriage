@@ -67,11 +67,13 @@ body {
     -moz-box-shadow: 0 0 2px rgba(0,0,0, 0.10);
     box-shadow: 0 0 2px rgba(0,0,0, 0.10);*/
 }
-.event-leslie {
+.event-elin,
+.event-bothleft {
     margin-right: 2em;
     border-right: 1px solid #e5e5df;
 }
-.event-eric {
+.event-johan,
+.event-bothright {
     margin-left: 2em;
     border-left: 1px solid #e5e5df;
 }
@@ -161,61 +163,81 @@ body {
     .event {
         clear: both;
     }
-    .event-leslie,
-    .event-eric {
+    .event-elin,
+    .event-johan,
+    .event-bothleft,
+    .event-bothright {
         width: 23em;
         position: relative;
     }
-    .event-leslie {
+    .event-bothleft,
+    .event-elin {
         float: left;
         clear: left;
         margin: 2em 1em 2em 0;
     }
-    .event-eric {
+    .event-bothright,
+    .event-johan {
         float: right;
         clear: right;
         margin: 2em 0 2em 1em;
     }
-    .event-leslie:before,
-    .event-leslie:after,
-    .event-eric:before,
-    .event-eric:after {
+    .event-elin:before,
+    .event-elin:after,
+    .event-johan:before,
+    .event-johan:after,
+    .event-bothleft:before,
+    .event-bothleft:after,
+    .event-bothright:before,
+    .event-bothright:after {
         content: "";
         height: 0;
         width: 0;
         position: absolute;
         border: solid transparent;
     }
-    .event-leslie:before,
-    .event-eric:before {
+    .event-elin:before,
+    .event-johan:before,
+    .event-bothleft:before,
+    .event-bothright:before {
         top: 14px;
         border-width: 12px;
     }
-    .event-leslie:after,
-    .event-eric:after {
+    .event-elin:after,
+    .event-johan:after,
+    .event-bothleft:after,
+    .event-bothright:after {
         top: 15px;
         border-width: 11px;
     }
-    .event-leslie:before {
+    .event-elin:before,
+    .event-bothleft:before {
         left: 100%;
         border-left-color: #e5e5df;
         /*border-left-color: rgba(0,0,0, 0.05);*/
     }
-    .event-leslie:after {
+    .event-elin:after,
+    .event-bothleft:after {
         left: 100%;
         border-left-color: #fff;
     }
-    .event-eric:before {
+    .event-johan:before,
+    .event-bothright:before {
         right: 100%;
         border-right-color: #e5e5df;
         /*border-right-color: rgba(0,0,0, 0.05);*/
     }
-    .event-eric:after {
+    .event-johan:after,
+    .event-bothright:after {
         right: 100%;
         border-right-color: #fff;
     }
-    .event-leslie + .event-eric,
-    .event-eric + .event-leslie {
+    .event-elin + .event-johan,
+    .event-johan + .event-elin,
+    .event-bothleft + .event-johan,
+    .event-bothright + .event-elin,
+    .event-bothleft + .event-bothright,
+    .event-bothright + .event-bothleft {
         margin-top: 4em;
     }
 }

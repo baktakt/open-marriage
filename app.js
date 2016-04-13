@@ -33,23 +33,23 @@ app.engine('hbs', exphbs({
 app.expose(config.yui.config, 'window.YUI_config');
 
 app.locals({
-    title   : 'Leslie & Eric',
-    appTitle: 'L&E Wedding',
+    title   : 'Elin & Johan',
+    appTitle: 'E&J Bröllop',
 
     version    : config.version,
     yui_version: config.yui.version,
 
     nav: [
-        {id: 'wedding',   url: '/wedding/',   label: 'Wedding'},
-        {id: 'logistics', url: '/logistics/', label: 'Logistics'},
-        {id: 'registry',  url: '/registry/',  label: 'Registry'},
-        {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
+        {id: 'wedding',   url: '/wedding/',   label: 'Bröllopet'},
+        {id: 'logistics', url: '/logistics/', label: 'Hitta hit'},
+        {id: 'registry',  url: '/registry/',  label: 'Bröllopsgåva'},
+        {id: 'rsvp',      url: '/rsvp/',      label: 'OSA'}
     ],
 
     subnav: {
         logistics: [
             {id: 'logistics', url: '/logistics/',         label: 'Logistics'},
-            {id: 'hotels',    url: '/logistics/hotels/',  label: 'Hotels'},
+            {id: 'hotels',    url: '/logistics/hotels/',  label: 'Hotell'},
             {id: 'outings',   url: '/logistics/outings/', label: 'Outings'}
         ]
     },
