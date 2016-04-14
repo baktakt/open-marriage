@@ -38,7 +38,7 @@ YUI.add('le-wedding', function (Y) {
 
     Y.one('#cal-day-circle').setStyles({
         left: null,
-        top : 0
+        top : 25
     });
 
     centerCal();

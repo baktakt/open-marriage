@@ -1,49 +1,41 @@
 {{setPageTitle "Wedding"}}
 {{setActiveNav "wedding"}}
 {{setYUIModule "le-wedding"}}
-{{setDescription "The details of Leslie Verploegen’s & Eric Ferraiuolo’s wedding."}}
+{{setDescription "Detaljerna för bröllopet"}}
 {{addCSS "/css/details.css"}}
 {{addCSS "/css/wedding.css"}}
 
-<div id="map" data-map="ericf.map-89cfakky"></div>
+<div id="map">
+    <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/baktakt.pm92i19m/attribution.html?access_token=pk.eyJ1IjoiYmFrdGFrdCIsImEiOiJjaW16OTBndTAwMGx5dnBtMW9wejRqYzhyIn0.YB0YXIjhjJefTtCfMqctXw'></iframe>
+</div>
 
 <div class="l-wrap">
     <h1 class="ann">
-        <span class="ann-secondary">Wedding</span>
-        <span class="ann-primary">October 5, 2013</span>
-        <span class="ann-secondary">Easton, MD</span>
+        <span class="ann-secondary">Bröllop</span>
+        <span class="ann-primary">17 september, 2016</span>
+        <span class="ann-secondary">Örgryte Gamla Kyrka, Göteborg</span>
     </h1>
 
     <ol class="cal l-contain l-grid">
-        {{#day "Friday 4"}}
-            {{addDayEvent "evening-before"
-                start = "8pm"
-                end   = "1am"
-                desc  = "Drinks @ Washington St. Pub & Oyster Bar"}}
+        {{#day "Lördag 17/9" primary=true}}
+            {{addDayEvent "ceremony"
+                start = "14.00"
+                desc  = "Bröllopsceremoni"}}
+
+            {{addDayEvent "ceremony"
+                start = "16.00"
+                end   = "sent"
+                desc  = "Middag / Fest"}}
 
             {{> day/header}}
             {{> day/events}}
         {{/day}}
 
-        {{#day "Saturday 5" primary=true}}
-            {{addDayEvent "ceremony"
-                start = "4:30pm"
-                desc  = "Wedding Ceremony"}}
-
-            {{addDayEvent "ceremony"
-                start = "5pm"
-                end   = "10pm"
-                desc  = "Reception"}}
-
-            {{> day/header}}
-            {{> day/events}}
-        {{/day}}
-
-        {{#day "Sunday 6"}}
+        {{#day "Söndag 18/9"}}
             {{addDayEvent "brunch"
-                start = "11am"
-                end   = "1pm"
-                desc  = "Informal Brunch Buffet"}}
+                start = "11.00"
+                end   = "13.00"
+                desc  = "Brunchbuffé på hotell Avalon"}}
 
             {{> day/header}}
             {{> day/events}}
@@ -63,7 +55,7 @@
 
     <div class="details l-contain">
         <h2 id="evening-before" class="anchored-header">
-            Drinks the Evening Before
+            Bröllopsceremoni
         </h2>
 
         <div class="details-group l-grid">
@@ -90,7 +82,7 @@
 
 
         <h2 id="ceremony" class="anchored-header">
-            Ceremony &amp; Reception
+            Middag & Fest
         </h2>
 
         <div class="details-group l-grid">
@@ -112,7 +104,7 @@
         </div>
 
         <h2 id="brunch" class="anchored-header">
-            Informal Brunch Buffet
+            Brunch
         </h2>
 
         <p>

@@ -47,6 +47,8 @@ body {
     white-space: normal;
     position: relative;
     padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-top: 1.5em;
 }
 .cal-day-primary {
     border: 1px solid #e5e5df;
@@ -55,7 +57,7 @@ body {
 }
 .cal-day-header {
     margin: 0.5em 0;
-    text-align: right;
+    text-align: left;
     font-family: "proxima-nova" sans-serif;
     font-size: 1em;
     font-weight: 700;
@@ -66,7 +68,7 @@ body {
 }
 
 #cal-day-circle {
-    right: -0.25em;
+    left: -1.9em;
 }
 
 .travel-nav {
@@ -114,7 +116,7 @@ body {
 /* 576px */
 @media screen and (min-width: 36em) {
     #cal-day-circle {
-        right: 0.5em;
+        left: -1.9em;
     }
 
     .travel-nav {
@@ -137,7 +139,7 @@ body {
         overflow-x: auto;
     }
     .cal-day {
-        width: 33.3333%;
+        width: 50%;
     }
 
     .anchored-header {
