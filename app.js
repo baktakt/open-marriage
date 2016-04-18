@@ -41,18 +41,10 @@ app.locals({
 
     nav: [
         {id: 'wedding',   url: '/wedding/',   label: 'Bröllopet'},
-        {id: 'logistics', url: '/logistics/', label: 'Hitta hit'},
-        {id: 'registry',  url: '/registry/',  label: 'Bröllopsgåva'},
+        {id: 'logistics', url: '/logistics/', label: 'Boende'},
+        {id: 'goodtoknow',   url: '/goodtoknow/',   label: 'Bra att veta'},
         {id: 'rsvp',      url: '/rsvp/',      label: 'OSA'}
     ],
-
-    subnav: {
-        logistics: [
-            {id: 'logistics', url: '/logistics/',         label: 'Logistics'},
-            {id: 'hotels',    url: '/logistics/hotels/',  label: 'Hotell'},
-            {id: 'outings',   url: '/logistics/outings/', label: 'Outings'}
-        ]
-    },
 
     yui_module: 'le-main',
 
@@ -104,8 +96,8 @@ app.get('/', routes.render('home'));
 app.get('/wedding/', routes.render('wedding'));
 
 app.get('/logistics/',         routes.render('logistics'));
-app.get('/logistics/hotels/',  routes.render('logistics/hotels'));
-app.get('/logistics/outings/', routes.render('logistics/outings'));
+
+app.get('/goodtoknow/', routes.render('goodtoknow'));
 
 app.get('/registry/', routes.render('registry'));
 

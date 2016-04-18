@@ -4,7 +4,7 @@
 
 <h1 class="ann">
     <span class="ann-primary">Elin Uddståhl</span>
-    <span class="ann-secondary ann-sep">&amp;</span>
+    <span class="ann-secondary ann-sep">och</span>
     <span class="ann-primary">Johan Olsson</span>
 </h1>
 
@@ -24,6 +24,19 @@
 
     <p class="button-wedding">
         <a class="button" data-icon="i" href="/wedding/">Mer information</a>
+    </p>
+
+    {{> event/time}}
+  {{/event}}
+  {{#event "Köpte förlovningsringar"
+        time = "2015"
+        photo  = "/photos/j+e-rings.jpg"}}
+
+    {{> event/header}}
+    {{> event/photo}}
+
+    <p>
+        Några...eller ja, ganska många...år efter själva förlovningen köptes äntligen förlovningsringarna.
     </p>
 
     {{> event/time}}
@@ -82,7 +95,7 @@
     {{> event/time}}
   {{/event}}
 
-  {{#event "Förlovning Engaged"
+  {{#event "Förlovning"
         time = "Nyår 2006"
         photo  = "/photos/jo+eu-engaged.jpg"}}
 
@@ -114,7 +127,7 @@
 
             {{> event/time}}
           {{/event}}
-        {{#event "Norrköping --> Göteborg"
+        {{#event "Norrköping -> Göteborg"
                 who  = "elin"
                 time = "2004"
                 photo  = "/photos/jo-home-sweet-home.jpg"}}
@@ -146,7 +159,7 @@
 
             {{> event/time}}
           {{/event}}
-        {{#event "Norrköping --> Göteborg"
+        {{#event "Norrköping -> Göteborg"
                 who  = "johan"
                 time = "2004"
                 photo  = "/photos/jo-home-sweet-home.jpg"}}
@@ -219,7 +232,7 @@
 
     <li class="timeline-events">
         <ol class="l-grid">
-        {{#event "Umeå --> Norrköping"
+        {{#event "Umeå -> Norrköping"
                 who  = "elin"
                 time = "September 2001"
                 photo  = "/photos/eu-moved.jpg"}}
@@ -233,7 +246,7 @@
 
             {{> event/time}}
           {{/event}}
-          {{#event "Göteborg --> Norrköping"
+          {{#event "Göteborg -> Norrköping"
                 who  = "johan"
                 time = "September 2000"
                 photo = "/photos/jo-moved.jpg"}}

@@ -87,7 +87,7 @@ body {
     width: 100%;
 }
 .event-person {
-    font-family: "fira-sans-2", sans-serif;
+    font-family: "bromelloregular", sans-serif;
     font-weight: 300;
     color: #b0afa6;
     text-align: right;
@@ -95,7 +95,7 @@ body {
     margin-right: -2.5em;
 }
 .event-person-sep {
-    font-family: "lobster", serif;
+    font-family: "bromelloregular", serif;
     font-weight: 400;
     margin: 0 0.15em;
 }
