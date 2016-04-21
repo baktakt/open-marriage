@@ -12,7 +12,7 @@ var combo   = require('combohandler'),
 
 // -- Configure ----------------------------------------------------------------
 
-app.set('name', 'Leslie-Eric Wedding');
+app.set('name', 'Johan-Elin Bröllop');
 app.set('env', config.env);
 app.set('port', config.port);
 app.set('views', config.dirs.views);
